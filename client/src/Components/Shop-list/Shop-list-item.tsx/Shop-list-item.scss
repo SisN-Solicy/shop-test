@@ -1,0 +1,53 @@
+.shop-list-item {
+    height: 250px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .list-item-main-image {
+        border-radius: 10px;
+        height: 90%;
+        width: 250px;
+    }
+
+    .list-item-x-icon {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        align-self: flex-start;
+        margin: 5px 5px 0 auto;
+    }
+
+    .list-item-x-icon:hover {
+        cursor: pointer;
+        background-color: #d1d1d1;
+    }
+
+    .shop-list-item-content {
+        align-self: flex-start;
+        padding-left: 10px;
+        padding-top: 10px;
+        max-width: 100px;
+        word-break: break-all;
+        overflow: hidden;
+
+        & > :nth-child(2) {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        & > :nth-child(1) {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        & > :nth-child(3) {
+            font-size: 14px;
+        }
+    }
+}

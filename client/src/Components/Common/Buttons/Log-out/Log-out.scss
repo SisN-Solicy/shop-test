@@ -1,0 +1,14 @@
+.log-out {
+    height: 25px;
+    width: 80px;
+    margin: 10px 10px 0 10px;
+    background-color: #2f9d95;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

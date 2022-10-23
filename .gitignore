@@ -1,0 +1,13 @@
+/server/node_modules
+/server/.env
+/server/yarn.lock
+/server/yarn-error.log
+/server/package-lock.json
+
+/client/node_modules
+/client/.env
+/client/yarn.lock
+/client/yarn-error.log
+
+/data
+/node_modules

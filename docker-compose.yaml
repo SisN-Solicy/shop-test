@@ -1,0 +1,19 @@
+version: "3.3"
+
+services:
+  server:
+    container_name: server
+    build: ./server
+  client:
+    container_name: client
+    build: ./client
+  db:
+    image: mariadb:10.2
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+    restart: on-failure
+    volumes:
+      - ./data:/var/lib/mysql
+    ports:
+      - 3306:3306
